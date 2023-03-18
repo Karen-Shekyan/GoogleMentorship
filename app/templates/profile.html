@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://kit.fontawesome.com/c4bce5f821.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    	/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #000000;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #605f5f;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #605f5f;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+</style>
+<div class="navbar">
+    <a href="http://app/templates/home.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+    <a class="active" href="http://app/templates/profile.html"> <i class="fa fa-fw fa-user"></i> Profile</a> 
+    <a href="http://app/templates/friends.html"><i class="fa-solid fa-users"></i> Friends</a> 
+    <a href="http://app/templates/settings.html"><i class="fa-solid fa-gears"></i> Settings</a>
+  </div>
+  
+<body>
+    <p><h1>Username</h1></p>
+    <img src="url" alt="alternatetext">
+
+    <p><h2>Bio</h2></p>
+    <p><h2>Ongoing Challenges</h2></p>
+    <p><h2>Completed Challenges</h2></p>
+
+</body>
+</html>
