@@ -3,6 +3,7 @@ import requests, os, json
 from database import *
 
 app = Flask(__name__)
+app.secret_key = os.urandom(32) # This is NOT secure. MUST FIX
 
 @app.route('/')
 def log_in():
@@ -13,7 +14,7 @@ def log_in():
 @app.route('/home')
 def home():
     if (session): # If logged in, show the home page
-        return render_template('home.html', user = 'username')
+        return render_template('home.html', user = session['username'])
     else: # ...else show the login page
         return redirect('/')
 
