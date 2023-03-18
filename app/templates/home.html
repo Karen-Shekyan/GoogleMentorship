@@ -8,6 +8,14 @@
 
 
 </head>
+
+<script>
+    function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle("dark-mode");
+  }
+</script>
+
 <style>
 	/* Style the navigation bar */
 .navbar {
@@ -43,6 +51,28 @@
     display: block;
   }
 }
+body {
+    background-color: white; /* default light mode background color */
+    color: black; /* default light mode text color */
+  }
+
+  body.dark-mode {
+    background-color: black; /* dark mode background color */
+    color: white; /* dark mode text color */
+  }
+
+  /* styles for the toggle button */
+ /* .toggle {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ccc;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+  }*/
+
 </style>
 
 <!-- Load an icon library -->
@@ -52,6 +82,9 @@
   <a href="http://app/templates/profile.html"> <i class="fa fa-fw fa-user"></i> Profile</a> 
   <a href="http://app/templates/friends.html"><i class="fa-solid fa-users"></i> Friends</a> 
   <a href="http://app/templates/settings.html"><i class="fa-solid fa-gears"></i> Settings</a>
+  <a class="toggle"  onclick="toggleDarkMode()"> <i class="fa-solid fa-circle-half-stroke"></i> Dark Mode</button> </a>
+</div>
+  </label>
 </div>
 
 
