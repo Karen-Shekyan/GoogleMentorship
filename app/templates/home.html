@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Home Page</title>
+	<title>Home</title>
 	<script src="https://kit.fontawesome.com/c4bce5f821.js" crossorigin="anonymous"></script>
 
 
@@ -20,7 +20,7 @@
 	/* Style the navigation bar */
 .navbar {
   width: 100%;
-  background-color: #000000;
+  background-color: white;
   overflow: auto;
 }
 
@@ -29,19 +29,19 @@
   float: left;
   text-align: center;
   padding: 12px;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 17px;
 }
 
 /* Navbar links on mouse-over */
 .navbar a:hover {
-  background-color: #605f5f;
+  background-color: #b8b8b8;
 }
 
 /* Current/active navbar link */
 .active {
-  background-color: #605f5f;
+  background-color: #b8b8b8;
 }
 
 /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
@@ -57,21 +57,25 @@ body {
   }
 
   body.dark-mode {
-    background-color: black; /* dark mode background color */
+    background-color: #141516; /* dark mode background color */
     color: white; /* dark mode text color */
   }
 
-  /* styles for the toggle button */
- /* .toggle {
-    display: inline-block;
-    cursor: pointer;
-    background-color: #ccc;
-    border: none;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease; 
-  }*/
+  body.dark-mode .navbar  {
+    background-color: #141516;
+  }
+
+  body.dark-mode .navbar a {
+    color: white;
+  }
+
+  body.dark-mode .navbar a:hover {
+    background-color: #555;
+  }
+
+  body.dark-mode .navbar .active {
+    background-color: #555;
+  }
 
 </style>
 
